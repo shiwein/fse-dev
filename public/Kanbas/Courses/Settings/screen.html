@@ -2,7 +2,7 @@
     <tr>
         <td valign="top">
             <ul>
-                <li><a href="/Kanbas/Account/EditProfile/screen.html">Account</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
                 <li><a href="/KanbasDashboard/screen.html">Dashboard</a></li>
                 <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
             </ul>
@@ -171,6 +171,132 @@
                                     <th class="th-left">End Time:</th>
                                     <td><input type="datetime-local" name="endTime"></td>
                                 </tr>
+                                <tr>
+                                    <th class="th-left"></th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Restrict students from viewing course before term
+                                            start date</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left"></th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Restrict students from viewing course before term
+                                            start date</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Default due time:</th>
+                                    <td>
+                                        <select name="timezone">
+                                            <option value="EST">Account default(11;59pm)</option>
+                                            <option value="CST">Other</option>
+                                        </select><br>
+                                        This influences the user interface for setting due dates. it does not chang the
+                                        time due for any exiting assignments.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Language:</th>
+                                    <td>
+                                        <select name="timezone">
+                                            <option value="EST">Not set (user-configurable, defaults to English)
+                                            </option>
+                                            <option value="CST">Other</option>
+                                        </select>
+                                        This will override any user/system language preferences. This is only
+                                        recommended for foreign language courses.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">File Copyright:</th>
+                                    <td>
+                                        10000 megabytes
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Large Courses:</th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Launch SpeedGrader Filtered by Student Group</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Grading Scheme:</th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Enable course as Course Template</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">License:</th>
+                                    <td>
+                                        <select name="timezone">
+                                            <option value="EST">Private(Copyrighted)</option>
+                                            <option value="CST">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">File Copyright:</th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Copyright and license information must be provided
+                                            for files before they are published.</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Visibility:</th>
+                                    <td>
+                                        If you need to make your course public please contact your
+                                        administrator/support.
+                                        <br>
+                                        <select>
+                                            <option value="">Course</option>
+                                            <option value="">Other</option>
+                                        </select>
+                                        <br>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Include this course in the piblic course
+                                            index.</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Format:</th>
+                                    <td>
+                                        <select name="timezone">
+                                            <option value="EST">On-Campus</option>
+                                            <option value="CST">Other</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Mastery Paths:</th>
+                                    <td>
+                                        <input type="checkbox" id="courseTemplate" name="courseTemplate">
+                                        <label for="courseTemplate">Enable individual learing paths for students based
+                                            on assessment.</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left">Description:</th>
+                                    <td>
+                                        <form id="textarea">
+                                            <label></label><br />
+                                            <textarea cols="45" rows="5"></textarea>
+                                            <br>
+                                            <a href="">More options</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="th-left"></th>
+                                    <td>
+                                        <a href=""><button>Update Course Details</button></a>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </body>
@@ -183,11 +309,22 @@
 
                 <div id="navigation" class="tab-content">
                     <!-- Navigation-->
-                    <h2>Drag and drop items to reorder them in the course navigation.</h2>
+                    <h5>Drag and drop items to reorder them in the course navigation.</h5>
                     <button class="nav-button">Home</button>
                     <button class="nav-button">Assignments</button>
                     <button class="nav-button">Grades</button>
-                
+                    <br><br>
+                    <h5>Drag items here to hide them from students.</h5>
+                    <button class="nav-button">Char</button>
+                    <button class="nav-button">SCORM</button>
+                    <button class="nav-button">ATTENDANDCE</button>
+                    <button class="nav-button">DIGICATION</button>
+                    <button class="nav-button">Assignments</button>
+                    <button class="nav-button">TOP HAT</button>
+                    <br><br>
+                    <button>Save</button>
+                    
+
                     <style>
                         .nav-button {
                             display: block;

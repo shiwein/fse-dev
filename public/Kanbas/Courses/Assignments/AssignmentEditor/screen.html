@@ -1,93 +1,121 @@
 <table>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Account/EditProfile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
-                </li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-            </ul>
-        </td>
-        <td valign="top">
-            <div
-                style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1px solid #ddd;">
-                <input type="text" placeholder="Search for Assignment"
-                    style="flex: 1; padding: 8px; margin-right: 10px;">
-                <button>+Group</button>
-                <button>+Assignments</button>
-            </div>
+    <td valign="top">
+        <ul>
+            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+            <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a>
+            </li>
+            <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+        </ul>
+    </td>
+    <td>
+        <button>
+            <option>SpeedGrader</option>
+        </button>
+        <hr>
+        <br>
+        <h2>Assignment name</h2>
+        <form>
+            <label></label>
+            <input type="text" name="" id="" placeholder="A1 - ENV + HTML">
+        </form>
+        <form id="textarea">
+            <label></label><br />
+            <textarea cols="30" rows="2">This is the assignment decription</textarea>
+        </form>
+        Points
+        <form>
+            <label></label>
+            <input type="number" name="" id="" placeholder="100">
+        </form>
+        Assignment Group
+        <br>
+        <select>
+            <option value="">Assignment</option>
+            <option value="">Other</option>
+        </select>
+        <br><br>
+        Display Grade as
+        <br>
+        <select>
+            <option>percentage</option>
+            <option>Other</option>
+        </select>
+        <br><br>
 
-            <button id="btnAssignments">Assignments</button> <br />
-            <button id="btnQuizzes">Quizzes</button>
+        Submission Type
+        <br>
+        <select>
+            <option>Online</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+        <label>Online Entrt Options</label>
+        <br />
+        <input type="checkbox"/>
+        <label for="chkbox-">Text Entry</label> <br />
+        <input type="checkbox"/>
+        <label for="chkbox-">Website URL</label> <br />
+        <input type="checkbox"/>
+        <label for="chkbox-">Media Recordings</label> <br />
+        <input type="checkbox"/>
+        <label for="chkbox-">Student Annotation</label>
+        <input type="checkbox"/>
+        <label for="chkbox-">File Uploads</label>
+        <input type="checkbox"/>
+        <br><br>
+        Submission attems
+        <br>
+        <select>
+            <option>Unlimited</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+        Plagiarism Review
+        <br>
+        <select>
+            <option>None</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+        Group Assignment
+        <br>
+        <input type="checkbox">
+        <label for="chkbox-group">This is a group assignment</label>
+        <br><br>
+        Peer Reviews
+        <br>
+        <input type="checkbox">
+        <label for="chkbox-group">Require Peer Reviews</label>
+        <br><br>
+        <h2>Assign</h2>
+        Assign to
+        <br>
+        <form>
+            <label></label>
+            <input type="text" name="" id="" placeholder="Everyone">
+        </form>
+        Due
+        <br>
+        <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+        Available form
+        <br>
+        <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+        until
+        <br>
+        <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+        <br>
+        <span><a href="/Kanbas/Courses/Assignments/screen.html"><button>Cancel</button><button>Save</button></a></span>
 
-            <div id="assignmentsContent" style="display: none;">
-                <ul>
-                    <li>Assignment 1</li>
-                    <li>Assignment 2</li>
-                    <li>Assignment 3</li>
-                </ul>
-            </div>
+    </td>
 
-            <div id="quizzesContent" style="display: none;">
-                <ul>
-                    <li>Quiz 1</li>
-                    <li>Quiz 2</li>
-                    <li>Quiz 3</li>
-                </ul>
-            </div>
-
-            <h1>ASSIGNMENTS 40% OF TOTAL</h1>
-            <button>Options</button>
-            <div style="display: none;">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-
-            <h1>QUIZZES 10% OF TOTAL</h1>
-            <button>Options</button>
-            <div style="display: none;">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-
-            <h1>EXAMS 20% OF TOTAL</h1>
-            <button>Options</button>
-            <div style="display: none;">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-
-            <h1>PROJECT 30% OF TOTAL</h1>
-            <button>Options</button>
-            <div style="display: none;">
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
-            </div>
-
-            <button id="btnAssignments">Assignments</button> <br />
-            <button id="btnQuizzes">Quizzes</button>
-        </td>
-    </tr>
 </table>
